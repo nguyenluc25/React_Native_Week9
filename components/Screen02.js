@@ -4,7 +4,7 @@ import { TouchableOpacity } from "react-native";
 import { FlatList, Image, Text, View } from "react-native";
 
 const Screen02 = ({ navigation }) => {
-  const { data, setData } = useState([]);
+  const [data, setData] = useState([]); // Khởi tạo state cho dữ liệu
 
   const fetchData = async () => {
     try {
